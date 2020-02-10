@@ -1,15 +1,20 @@
-import React from "react";
+import React, { useEffect } from "react";
 import Smurf from "./Smurf";
 import { connect } from "react-redux";
+import { getData } from "../actions/action";
 
 const SmurfList = props => {
-  return (
-    <div>
-        {props.smurfs.map(smurf => {
-            return <Smurf key={smurf.id} smurf={smurf} />
-        })}
-    </div>
-  );
+    useEffect(() => {
+        props.getData();
+      }, []);
+    
+    return (
+        <div>
+            {props.smurfs.map(smurf => {
+                return <Smurf key={smurf.id} smurf={smurf} />
+            })}
+        </div>
+    );
 };
 
 const mapStateToProps = state => {
@@ -17,4 +22,5 @@ const mapStateToProps = state => {
     smurfs: state.smurfs
   };
 };
-export default connect(mapStateToProps, {})(SmurfList);
+
+export default connect(mapStateToProps, { getData })(SmurfList);
