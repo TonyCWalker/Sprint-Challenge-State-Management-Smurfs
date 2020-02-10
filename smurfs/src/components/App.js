@@ -9,7 +9,7 @@ class App extends Component {
     return (
       <div className="App">
         <h1>Welcome to Smurf Village!</h1>
-        <p>Add a new Smurf below!</p>
+        <p className="addSmurfBelow">Add a new Smurf below!</p>
         <AddSmurfForm/>
         <SmurfList />
       </div>

@@ -1,5 +1,67 @@
 .App {
   text-align: center;
+  background-color: #88CCFF;
+  height: 100vh;
+}
+
+h1 {
+  background-color: white;
+  margin: 0;
+  height: 100px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 3rem;
+}
+
+.addSmurfBelow {
+  color: white;
+  font-weight: bold;
+  font-size: 1.5rem;
+}
+.addSmurfForm {
+  margin-top: 20px;
+  display: flex;
+  justify-content: center;
+  font-weight: bold;
+}
+
+label {
+  margin-left: 20px;
+  margin-right: 10px;
+}
+
+button {
+  margin-left: 20px;
+  font-weight: bold;
+  background-color: white;
+  border-radius: 10px;
+}
+
+.smurf-container {
+  background-color: white;
+  width: 1000px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: row;
+  flex-flow: wrap;
+  margin-top: 20px;
+  padding: 20px;
+  border-radius: 10px;
+}
+
+.smurf {
+  border-radius: 10px;
+  width: 25%;
+
+  margin: 0 auto;
+  padding: 20px;
+  margin-top: 10px;
+  margin-bottom:10px;
+  background-color: #88CCFF;
+  font-weight: bold;
+  font-size: 1.5rem;
+  box-shadow: 10px 5px 5px grey;
 }
 
 .App-logo {
